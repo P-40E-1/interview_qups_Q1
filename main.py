@@ -49,8 +49,8 @@ try:
                     # Sort English suggestions by length (shortest to longest)
                     english_suggestions.sort(key=lambda x: len(x))
 
-                    sheet.cell(row=row, column=5).value = english_suggestions[0]  # Longest English suggestion
-                    sheet.cell(row=row, column=4).value = english_suggestions[-1]  # Shortest English suggestion
+                    sheet.cell(row=row, column=5).value = english_suggestions[0]  # Shortest English suggestion
+                    sheet.cell(row=row, column=4).value = english_suggestions[-1]  # Longest English suggestion
 
     # Save the updated Excel file
     workbook.save("Excel.xlsx")
